@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserción</title>
+    <link rel="stylesheet" href="./css/insercion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+    <form onsubmit="return formValidation()" action="" method="post">
+        <!--------INSERCION TITLE ------>
+        <h2>INSERCION</h2>
+
+        <!---------THE LABELS AND INPUTS ----------->
+        <!-- NOMBRE -->
+        <label for="firstName">NOMBRE</label><br>
+        <input onchange="hideMessage('firstName')" type="text" name="firstName" id="firstName"><br><br>
+        <div id="firstNameHelp" class="help">El nombre debe de ser correcto</div><br>
+
+        <!-- APELLIDOS -->
+        <label for="lastName">APELLIDOS</label><br>
+        <input onchange="hideMessage('lastName')" type="text" name="lastName" id="lastName"><br><br>
+        <div id="lastNameHelp" class="help">Los apellidos deben de ser correctos</div><br>
+
+        <!-- EMAIL -->
+        <label for="email">EMAIL</label><br>
+        <input onchange="hideMessage('email')" type="text" name="email" id="email"><br><br>
+        <div id="emailHelp" class="help">El email debe ser correcto, debe de contener caracteres especiales, arroba, punto(com, es..)</div><br>
+
+        <!-- TELEFONO -->
+        <label for="phone">TELEFONO</label><br>
+        <input onchange="hideMessage('phone')" type="text" name="phone" id="phone"><br><br>
+        <div id="phoneHelp" class="help">El teléfono debe de ser mínimo 9 dígitos </div><br>
+
+        <!-- PROVINCIA -->
+        <label for="provincia">PROVINCIA</label><br>
+        <select onchange="hideMessage('provincia')" name="provincia" id="provincia">
+            <option value="0">--Selecciona una provincia</option>
+            <option value="1">MÁLAGA</option>
+            <option value="2">SEVILLA</option>
+            <option value="3">CÓRDOBA</option>
+        </select><br><br>
+        <div id="provinciaHelp" class="help">La provincia la tienes que elegir no se puede quedar vacio</div><br>
+        <!-- SEXO -->
+        <label for="sexo">SEXO</label><br>
+        <input onchange="hideMessage('sexo')" type="radio" name="sexo" id="male" value="male" ><label class="radio" for="male"> Maculino</label>
+        <input onchange="hideMessage('sexo')" type="radio" name="sexo" id="female" value="female"checked><label class="radio" for="female"> Femenino</label>
+        <input onchange="hideMessage('sexo')" type="radio" name="sexo" id="other" value="other"><label class="radio" for="other"> Otro</label><br>
+        <div id="sexoHelp" class="help">Sexo must be selected</div><br>
+        <!-- TERMINOS -->
+        <input onchange="hideMessage('term')" type="checkbox" name="term" id="term">
+        <label for="terms" id="terms_label">Acepto los términos</label>
+        <div id="termsHelp" class="help">Debes de aceptar los términos</div><br>
+
+        <!------------ SUBMIT ------------>
+        <input type="submit" value="INSERCION">
+    </form>
+    <!------------ JAVASCRIPT ------------>
+    <script src="./js/validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/*******************************************/
+/*Style maria lopez lopez for modificacion*/
+/******************************************/
+/*EMPEZAMOS CON FONTS*/
+@font-face {
+    font-family: tex;
+    src: url(../font/Orbitron-Regular.ttf);
+}
+/*********YA EMPEZAMOS CON TODAS LAS COSAS QUE TENEMOS DENTRO DEL BODY*/
+* {box-sizing: border-box;}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7e5deb;
+    background-image: url(..img/modificacion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+form{
+    background-color: rgb(101, 101, 149);
+    margin: 2% 0 2% 0;
+    border-radius: 20px;
+    padding: 0px 35px 35px 35px;
+    border: 0.2rem solid aqua;
+    box-shadow: 0 0 0.2rem aqua,
+    0 0 .2rem aqua,
+    0 0 2rem blue,
+    0 0 0.8rem blue,
+    0 0 2.8rem blue,
+    inset 0 0 1.3rem blue;
+}
+h2{
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow:0 0 7px rgb(95, 95, 184),
+                0 0 1px #1375fe,
+                0 0 1px #1375fe,
+                0 0 20px #1375fe,
+                0 0 8px #1375fe,
+                0 0 8px #1375fe,
+                0 0 9px #1375fe,
+                0 0 10px #1375fe,
+                0 0 15px #1375fe;
+}
+form * {
+    font-family: tex;
+    color: black;
+    border: none;
+}
+label:not(.radio):not(#terms_label) {font-size: 1.3rem;}
+input, select {
+    font-size: 1rem;
+    margin-top: 8px;
+    padding: 0 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.116);
+}
+input:not([type=radio]):not([type=checkbox]), select {
+    width: 100%;
+    height: 30px;
+}
+select, input[type="radio"], input[type="checkbox"] {cursor: pointer;}
+
+select option {
+    color: white;
+    background-color: #161616;
+}
+input[type="submit"] {
+    font-weight: bold;
+    color: white;
+    background-color: #5D28CE;
+    margin-top: 5%;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #441d99;
+    
+}
+
+.help {
+    color: red;
+    visibility: hidden;
+}

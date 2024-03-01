@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+    <form onsubmit="return loginValidation()" action="" method="post">
+        <!----------LOGIN TITLE ---------->
+        <h2>LOGIN</h2>
+
+        <!------ THE LABELS AND INPUTS ------>
+        <!-- USUARIO -->
+        <label for="username">USERNAME</label>
+        <input onchange="hideMessage('username')" type="text" name="username" id="username">
+        <div id="usernameHelp">El usuario debe contener entre 8-12 caracteres obligatoriamente</div>
+
+        <!-- CONTRASEÑA -->
+        <label for="password">PASSWORD</label>
+        <input onchange="hideMessage('password')" type="password" name="password" id="password">
+        <div id="passwordHelp">La contraseña debe de tener mínimo 8 caracteres y como maximo 12,<br>debes de usar caracteres especiales, números y letras, sino no se dará por válida la contraseña</div>
+
+        <!---------- ENVIAR --------->
+        <input type="submit" value="LOGIN">
+    </form>
+    <!------------ JAVASCRIPT ------------>
+    <script src="./js/validation.js"></script>
+</body>
+</html>

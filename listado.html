@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado</title>
+    <link rel="stylesheet" href="./css/listado.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <!------------ TITLE ------------>
+        <h2>LISTADO</h2>
+        <!------------ TABLE ------------>
+        <ul class="responsive-table">
+            <li class="table-header">
+                <div class="col col-1">Nombre</div>
+                <div class="col col-2">Apellidos</div>
+                <div class="col col-3">Email</div>
+                <div class="col col-4">Telefono</div>
+                <div class="col col-5">Provincia</div>
+                <div class="col col-7" data-label="Options">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li class="table-row">
+                <div class="col col-1" data-label="Nombre">Alejandro</div>
+                <div class="col col-2" data-label="Apellidos">Cruz</div>
+                <div class="col col-3" data-label="Email">alecruzp@gmail.com</div>
+                <div class="col col-4" data-label="Telefono">696665041</div>
+                <div class="col col-5" data-label="Subject">MÁLAGA</div>
+                <div class="col col-7" data-label="Options">
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                    <i onclick="deleteTeacher()" class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li class="table-row">
+                <div class="col col-1" data-label="Nombre">María</div>
+                <div class="col col-2" data-label="Apellidos">López</div>
+                <div class="col col-3" data-label="Email">marialop@example.com</div>
+                <div class="col col-4" data-label="Telefono">622147889</div>
+                <div class="col col-5" data-label="Subject">SEVILLA</div>
+                <div class="col col-7" data-label="Options">
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                    <i onclick="deleteTeacher()" class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li class="table-row">
+                <div class="col col-1" data-label="Nombre">David</div>
+                <div class="col col-2" data-label="Apellidos">Naveira</div>
+                <div class="col col-3" data-label="Email">dnaveira@example.es</div>
+                <div class="col col-4" data-label="Telefono">658479587</div>
+                <div class="col col-5" data-label="Subject">CÓRDOBA</div>
+                <div class="col col-7" data-label="Options">
+                    <i class="fa fa-pencil-square" aria-hidden="true"></i>
+                    <i onclick="deleteTeacher()" class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!------------ JAVASCRIPT ------------>
+    <script src="./js/validation.js"></script>
+</body>
+</html>
